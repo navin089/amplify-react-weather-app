@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.app{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  background-color: rgb(235, 241, 241);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__h1{
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  background-color: #f7efef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 450px;
+  border: 1px solid #181717;
+  border-radius: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather__container{
+  margin: auto auto;
+  height: 200px;
+  width:220px;
+  border: 1px solid grey;
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.weatherTemp__container > p{
+  font-weight: 900;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+
+}
+
+.weather__container > h2{
+margin-bottom: 35px;
+border-bottom: 1px solid grey;
+width: fit-content;
+padding: 5px;
+}
+
+/**********************************************************/
+
+.inputBox{
+  display: flex;
+  margin: 20px 20px;
+}
+
+.inputBox > input{
+  padding: 5px;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  width:260px;
+  height: 40px;
+  min-height: 35px;
+  min-width: 100px;
+  outline: 0;
+  border: none;
+  border-radius: 15px;
+}
+
+.inputBox > button{
+  border: none;
+  background-color: black;
   color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 20px;
+  outline:0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
